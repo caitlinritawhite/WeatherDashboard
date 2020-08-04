@@ -1,0 +1,47 @@
+nav {
+    height: 80px;
+
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+.side {
+    background-color: rgb(226, 219, 219);
+    width: 100px;
+    height: 600px;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.form {
+    margin-left: 20px;
+    border-radius: 5%;
+    height: 35px;
+}
+
+button {
+    border-radius: 10%;
+    background-color: rgb(23, 153, 228);
+    border-color: rgb(23, 153, 228);
+    color: white;
+    margin-left: 5px;
+}
+
+button:active {
+    border:none;
+}
+
+.main-content {
+    border: .5px solid #494646;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 470px;
+}
