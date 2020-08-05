@@ -9,8 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
     
     <title>Weather Dashboard
         
@@ -30,30 +29,40 @@
                 <div class="form-row">
                   <div >
                       <h4>Search for a city:</h4><br>
-                    <input  type="text" id="search-form" class="col-8 form"><button  type="submit" class="btn btn-primary col-3">Search</button>
+                    <input  type="text" id="search-form" class="col-8 form"><button id="searchBtn" type="submit" class="btn btn-primary col-3">Search</button>
                   </div>
                 </div>
               </form>
         </div>
-        <div class="col-8 main-content"></div>
+        <div class="col-8 main-content">
+          <div>
+        <div><span class="city-name">  _____________</span><span id="current-icon"></span></div>
+        <div class="display-content top-content"><b>Temperature:</b> <span class="temp"></span></div>
+        <div class="display-content"><b>Humidity: </b><span class="humidity"></span></div>
+        <div class="display-content"><b>Wind Speed: </b><span class="wind"></span></div>
+        <div class="display-content"><b>UV Index: </b><span class="uv-index"></span></div>
     </div>
+    <div class = "five-day-content">
+      <div>
+        
+      </div>
+    </div>
+  </div>
+
+ 
 
        
        
 
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+

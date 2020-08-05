@@ -43,5 +43,25 @@ button:active {
     border: .5px solid #494646;
     margin-left: 20px;
     margin-top: 20px;
-    height: 470px;
+    height: 285px;
+}
+
+.display-content {
+    margin-bottom: 30px;
+}
+
+.top-content {
+    margin-top: 40px;
+    padding: none;
+}
+
+.city-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+.five-day-content {
+    border: .5px solid #494646;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 200px;
 }
