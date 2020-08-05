@@ -54,7 +54,7 @@ var latitude = response.city.coord.lat;
 var longitude =  response.city.coord.lon;
 
 //new API for the uv index information
-var coordinateURL = "http://api.openweathermap.org/data/2.5/uvi?appid=e5f561d692ee5b0d5bfef99cb764f31d&lat=" + latitude + "&lon=" + longitude;
+var coordinateURL = "https://api.openweathermap.org/data/2.5/uvi?appid=e5f561d692ee5b0d5bfef99cb764f31d&lat=" + latitude + "&lon=" + longitude;
 
 //run ajax again to get the information from the new API
 $.ajax({
