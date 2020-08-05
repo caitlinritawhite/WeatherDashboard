@@ -4,8 +4,12 @@
 $("#searchBtn").on("click", function(event){
   var userInput = $("#search-form").val()
   event.preventDefault()
+
   
+  cityLibrary.push(userInput)
+
   weather(userInput)
+  renderCities()
 
     $('#five-day-content').empty();
     $("#current-icon").empty();
@@ -119,6 +123,9 @@ $.ajax({
 
   }
 
+
+  
+
   console.log(forecast)
 
 
@@ -129,5 +136,23 @@ $.ajax({
   });
 
 
-
 }
+
+var cityLibrary = []
+function renderCities() {
+  $("#city-storage").empty()
+
+
+// Loop through the array of movies, then generate buttons for each movie in the array
+for(i=0; i<cityLibrary.length; i++){
+
+var cityDiv = $("<div>").attr("id", "city" + [i])
+ var cityBtn = $("<button>").text(cityLibrary[i]).addClass("city-button");
+ var finalDiv = $(cityDiv).append(cityBtn)
+$("#city-storage").append(finalDiv);
+}
+}
+
+
+
+

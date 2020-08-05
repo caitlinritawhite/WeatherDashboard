@@ -79,3 +79,13 @@ button:active {
     padding: 1% 1%;
     border-radius: 5px;
 }
+
+.city-button {
+    border-radius: 10%;
+    background-color: white;
+    border-color:white;
+    color: black;
+    margin-left: 20px;
+    width: 240px;
+    margin-top: 20px;
+}
