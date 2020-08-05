@@ -43,7 +43,7 @@ button:active {
     border: .5px solid #494646;
     margin-left: 20px;
     margin-top: 20px;
-    height: 285px;
+    height: 310px;
 }
 
 .display-content {
@@ -59,9 +59,23 @@ button:active {
     font-size: 30px;
     font-weight: bold;
 }
-.five-day-content {
+.bottom-content {
     border: .5px solid #494646;
-    margin-left: 20px;
+    margin-left: -10px;
     margin-top: 20px;
-    height: 200px;
+    height: 280px;
+}
+
+.forecast {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.five-days{
+    background-color: rgb(23, 153, 228);    
+    color: white;
+    margin: 1% 1%;
+    padding: 1% 1%;
+    border-radius: 5px;
 }

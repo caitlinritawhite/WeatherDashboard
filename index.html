@@ -30,21 +30,26 @@
                   <div >
                       <h4>Search for a city:</h4><br>
                     <input  type="text" id="search-form" class="col-8 form"><button id="searchBtn" type="submit" class="btn btn-primary col-3">Search</button>
+                  <span id="city-storage"></span>
                   </div>
                 </div>
               </form>
         </div>
         <div class="col-8 main-content">
           <div>
-        <div><span class="city-name">  _____________</span><span id="current-icon"></span></div>
+        <div><span class="city-name">-----------</span><span id="current-icon"></span><hr></div>
         <div class="display-content top-content"><b>Temperature:</b> <span class="temp"></span></div>
         <div class="display-content"><b>Humidity: </b><span class="humidity"></span></div>
         <div class="display-content"><b>Wind Speed: </b><span class="wind"></span></div>
         <div class="display-content"><b>UV Index: </b><span class="uv-index"></span></div>
     </div>
-    <div class = "five-day-content">
+    <div >
       <div>
-        
+        <span class="forecast">Five Day Forecast</span><hr>
+        <div class = "row" id="five-day-content">
+
+        </div>
+
       </div>
     </div>
   </div>
