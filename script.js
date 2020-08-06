@@ -13,6 +13,7 @@ $("#searchBtn").on("click", function(event){
 
     $('#five-day-content').empty();
     $("#current-icon").empty();
+    $("#search-form").val("");
 });
 
 //Here is our weather function that runs when the search button is clicked
@@ -148,10 +149,20 @@ for(i=0; i<cityLibrary.length; i++){
 
 var cityDiv = $("<div>").attr("id", "city" + [i])
  var cityBtn = $("<button>").text(cityLibrary[i]).addClass("city-button");
- var finalDiv = $(cityDiv).append(cityBtn)
-$("#city-storage").append(finalDiv);
+ var finalDiv = $(cityDiv).prepend(cityBtn)
+$("#city-storage").prepend(finalDiv);
+localStorage.setItem('key'+[i],cityLibrary[i])
 }
+
+$(".city-button").on("click", function(){
+  var cityInput = $(this).text()
+
+  $('#five-day-content').empty();
+  $("#current-icon").empty();
+  weather(cityInput)
+});
 }
+
 
 
 
